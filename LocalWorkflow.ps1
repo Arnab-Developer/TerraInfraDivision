@@ -22,7 +22,7 @@ function CreateResourceGroup([string] $environmentName)
 
         terraform apply -auto-approve `
             -var 'application_name=terraapp1' `
-            -var 'subscription_id=e14fb840-981f-4a3d-a81b-5c460951de8c' `
+            -var 'subscription_id=[subscription_id]' `
             -var 'location=North Europe'
     }
     finally
@@ -45,7 +45,7 @@ function CreateNetwork([string] $environmentName)
 
         terraform apply -auto-approve `
             -var 'application_name=terraapp1' `
-            -var 'subscription_id=e14fb840-981f-4a3d-a81b-5c460951de8c'
+            -var 'subscription_id=[subscription_id]'
     }
     finally
     {
